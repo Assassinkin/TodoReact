@@ -1,7 +1,7 @@
 {
-  "name": "Boilerplate3",
+  "name": "Todoapp",
   "version": "1.0.0",
-  "description": "Boilerplate React App with foundation , scss and karma/mocha tests included",
+  "description": "todo app",
   "main": "index.js",
   "scripts": {
     "test": "karma start",
