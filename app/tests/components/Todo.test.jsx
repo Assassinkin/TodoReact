@@ -10,7 +10,7 @@ describe('Todo', () => {
     expect(Todo).toExist();
   });
   it('should call on toggle prop with id on click', ()=> {
-    var todData = {
+    var todoData = {
       id: 414,
       text: 'todod dsqdqsqs',
       completed: false
