@@ -42,11 +42,11 @@ describe('TodoAPI', () => {
         text: 'tesdqdsqqsd',
         completed: false
       }];
-      localStorage.setItemm('todos',JSON;stringify(todos));
+      localStorage.setItem('todos',JSON.stringify(todos));
 
       var actualTodos = TodoAPI.getTodos();
 
-      expect(actualTodos).toBe(todos);
+      expect(actualTodos).toEqual(todos);
     });
   });
 });
