@@ -17,7 +17,7 @@ describe('TodoApp', () => {
     todoApp.handleAddTodo(todoText);
 
     expect(todoApp.state.todos[0].text).toBe(todoText);
-    expect(todoApp.state.todos[0].createdAt).toBe('number');
+    expect(todoApp.state.todos[0].createdAt).toBeA('number');
   });
   it('should toggle completed value when handletoggle is called ', () => {
     var todoData = {
@@ -33,7 +33,7 @@ describe('TodoApp', () => {
     expect(todoApp.state.todos[0].completed).toBe(false);
     todoApp.handleToggle(414);
     expect(todoApp.state.todos[0].completed).toBe(true);
-    expect(todoApp.state.todos[0].completedAt).toBe('number');
+    expect(todoApp.state.todos[0].completedAt).toBeA('number');
   });
   it('should toggle todo from completed to incompleted ', () => {
     var todoData = {
