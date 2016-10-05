@@ -25,6 +25,21 @@ describe('Actions',()=> {
     var res = actions.addTodo(action.text);
     expect(res).toEqual(action)
   });
+  it('should generate addtodos action object',() =>{
+    var todos =[{
+      id: '111',
+      text: 'machin machin machin',
+      completed: false,
+      completedAt: undefined,
+      createdAt: 33000
+    }];
+    var action = {
+      type: 'ADD_TODOS',
+      todos
+    };
+    var res = actions.addTodos(todos);
+    expect(res).toEqual(action);
+  });
   it('should generate tooglke todo  action', () => {
     var action = {
       type: 'TOGGLE_TODO',
