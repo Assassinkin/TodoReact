@@ -4,7 +4,6 @@ var {Provider} = require('react-redux');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 var TodoApp = require('TodoApp');
-
 var actions = require('actions');
 var store = require('configureStore').configure();
 
@@ -12,9 +11,6 @@ store.subscribe(() => {
   console.log('NEw state', store.getState());
 });
 
-store.dispatch(actions.addTodo('Clean the ward'));
-store.dispatch(actions.setSearchText('ward'));
-store.dispatch(actions.toggleShowCompleted());
 // Load foundation
 $(document).foundation();
 
