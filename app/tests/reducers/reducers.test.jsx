@@ -96,10 +96,10 @@ describe('Reducers', () => {
     });
     it('should wipe auth on LOGout', () => {
       const authData = {
-        uid: 'abc123'
+        uid: '123abc'
       }
       const action = {
-        type: 'LOGIN'
+        type: 'LOGOUT'
       };
 
       const res = reducers.authReducer(df(authData) ,df(action));
